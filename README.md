@@ -1,3 +1,3 @@
 # Burger-Ordering-System
 
-! Only compatible with Chrome currently. Need to create compatibilty for Firefox and Explorer.
+! Create compatibilty with Firefox and IE.
