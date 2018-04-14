@@ -1,0 +1,156 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#bun-bottom {
+  background-color: #eebe72;
+  border-radius: 0 0 50px 50px;
+}
+
+#bun-top {
+  background-color: #eebe72;
+  border-radius: 50px 50px 0 0;
+}
+
+#burger {
+  margin: 25px;
+  flex-direction: column;
+}
+
+#button {
+    transform: rotate(-90deg)
+}
+
+#cheese {
+  background-color: #ffc000;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hide {
+  display: none;
+  justify-content: flex-end;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  cursor: pointer;
+  font-family: 'Chewy', cursive;
+  font-size: 1.35em;
+  line-height: .5em;
+}
+
+#ketchup {
+  background-color: #f1111c;
+}
+
+#left {
+  flex: 1;
+  background-color: #0036e8;
+}
+
+#lettuce {
+  background-color: #32cc32;
+}
+
+.margin {
+  margin-top: .8em;
+  margin-bottom: 0px;
+}
+
+#mayo {
+  background-color: #f7f2c9;
+}
+
+#meat {
+  background-color: #52301e;
+}
+
+#mustard {
+  background-color: #fff700;
+}
+
+#onion {
+  background-color: white;
+}
+
+#order {
+  flex: 4;
+  flex-direction: column;
+  background-image: url("https://image.freepik.com/free-photo/crumpled-white-paper_1194-7543.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Homemade Apple', cursive;
+  text-align: center;
+  box-shadow: 5px 5px 2px #303030;
+  height: auto;
+  max-width: 80%;
+  min-height: 90%;
+  margin: 25px;
+}
+
+#pickle {
+  background-color: #008507;
+}
+
+#reset {
+  justify-content: space-evenly;
+  width: 175px;
+  height: 50px;
+  background-color: #f1111c;
+  margin: auto;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+#right {
+  flex: 1;
+  background-color: #fff700;
+}
+
+#tomatoe {
+  background-color: #f1111c;
+}
+
+#reset:hover {
+  background-color: #0036e8;
+}
+
+@media only screen and (max-width: 760px) {
+  #button {
+    transform: rotate(0deg);
+    padding-top: 25px;
+  }
+
+  .margin {
+    margin-top: 1em;
+  }
+
+  #order {
+    min-width: 80%;
+  }
+
+  #outer {
+    flex-direction: column;
+  }
+
+  #right {
+    flex-direction: column;
+  }
+}
