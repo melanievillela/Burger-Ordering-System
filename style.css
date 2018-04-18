@@ -14,12 +14,14 @@ body {
 }
 
 #burger {
-  margin: 25px;
   flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 25px 0;
 }
 
 #button {
-    transform: rotate(-90deg)
+  margin: 25px;
 }
 
 #cheese {
@@ -31,6 +33,11 @@ body {
   flex-direction: row;
 }
 
+h2 {
+  margin: 0px;
+  padding-top: 5px;
+}
+
 .hide {
   display: none;
   justify-content: flex-end;
@@ -39,14 +46,14 @@ body {
 .inner {
   display: flex;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
 }
 
 .item {
   display: flex;
   justify-content: center;
-  width: 300px;
+  min-width: 250px;
+  max-width: 300px;
   cursor: pointer;
   font-family: 'Chewy', cursive;
   font-size: 1.35em;
@@ -59,6 +66,7 @@ body {
 
 #left {
   flex: 1;
+  justify-content: center;
   background-color: #0036e8;
 }
 
@@ -67,8 +75,8 @@ body {
 }
 
 .margin {
-  margin-top: .8em;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #mayo {
@@ -88,7 +96,6 @@ body {
 }
 
 #order {
-  flex: 4;
   flex-direction: column;
   background-image: url("https://image.freepik.com/free-photo/crumpled-white-paper_1194-7543.jpg");
   background-repeat: no-repeat;
@@ -97,9 +104,8 @@ body {
   text-align: center;
   box-shadow: 5px 5px 2px #303030;
   height: auto;
-  max-width: 80%;
-  min-height: 90%;
-  margin: 25px;
+  min-width: 80%;
+  margin-top: 25px;
 }
 
 #pickle {
@@ -121,6 +127,8 @@ body {
 
 #right {
   flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: #fff700;
 }
 
@@ -133,13 +141,13 @@ body {
 }
 
 @media only screen and (max-width: 760px) {
-  #button {
-    transform: rotate(0deg);
-    padding-top: 25px;
-  }
 
   .margin {
     margin-top: 1em;
+  }
+
+  .inner {
+    padding: 25px;
   }
 
   #order {
